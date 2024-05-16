@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="53.119" tests="5" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\target\test-classes;C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\target\classes;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nandhini\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Nandhini\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Nandhini\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Nandhini\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Nandhini\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Nandhini\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Nandhini\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Nandhini\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Nandhini\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Nandhini\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nandhini\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Nandhini\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Nandhini\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Nandhini\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Nandhini\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Nandhini\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nandhini\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nandhini\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\Nandhini\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\Nandhini\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Nandhini\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Nandhini\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Nandhini\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Nandhini\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nandhini\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Nandhini\AppData\Local\Temp\surefire7238075003469639222\surefirebooter-20240513182659126_3.jar C:\Users\Nandhini\AppData\Local\Temp\surefire7238075003469639222 2024-05-13T18-26-58_943-jvmRun1 surefire-20240513182659126_1tmp surefire_0-20240513182659126_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\target\test-classes;C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\target\classes;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Nandhini\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nandhini\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Nandhini\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Nandhini\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Nandhini\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Nandhini\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Nandhini\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Nandhini\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Nandhini\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Nandhini\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Nandhini\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Nandhini\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Nandhini\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Nandhini\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Nandhini\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nandhini\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Nandhini\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Nandhini\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Nandhini\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Nandhini\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Nandhini\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Nandhini\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Nandhini\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Nandhini\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Nandhini\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\Nandhini\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\Nandhini\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Nandhini\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Nandhini\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Nandhini\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Nandhini\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Nandhini\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Nandhini"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nandhini\AppData\Local\Temp\surefire7238075003469639222\surefirebooter-20240513182659126_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="Nandhini"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Nandhini\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Nandhini\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Nandhini/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/Nandhini/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-17\bin;C:\Users\Nandhini\apache -maven\apache-maven-3.9.4-bin\apache-maven-3.9.4\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Nandhini\AppData\Local\Android\Sdk\build-tools;C:\Users\Nandhini\AppData\Local\Android\Sdk\platforms;C:\Users\Nandhini\AppData\Local\Android\Sdk\platform-tools;C:\Users\Nandhini\AppData\Local\Android\Sdk\tools;C:\Users\Nandhini\AppData\Local\Android\Sdk\tools\bin;C:\Users\Nandhini\AppData\Local\Microsoft\WindowsApps;C:\Users\Nandhini\AppData\Roaming\npm;C:\Users\Nandhini\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nandhini\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Check_RemeberMe3" classname="com.test.automation.tests.script.SalesForceLoginAutomationScript" time="7.722">
+    <failure message=" login Unsucessful expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError:  login Unsucessful expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.test.automation.tests.script.SalesForceLoginAutomationScript.Check_RemeberMe3(SalesForceLoginAutomationScript.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[report utility object created=com.test.automation.tests.utility.ExtentReportsUtility@3270d194
+2024-05-13 18:27:02,134 DEBUG InternalLoggerFactory.java:76 - Using Log4J2 as the default logging framework
+2024-05-13 18:27:02,147 DEBUG ResourceLeakDetector.java:129 - -Dio.netty.leakDetection.level: simple
+2024-05-13 18:27:02,147 DEBUG ResourceLeakDetector.java:130 - -Dio.netty.leakDetection.targetRecords: 4
+2024-05-13 18:27:02,154 DEBUG ResourceLeakDetectorFactory.java:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5649ec46
+2024-05-13 18:27:02,176 DEBUG PlatformDependent0.java:497 - -Dio.netty.noUnsafe: false
+2024-05-13 18:27:02,176 DEBUG PlatformDependent0.java:1001 - Java version: 17
+2024-05-13 18:27:02,178 DEBUG PlatformDependent0.java:137 - sun.misc.Unsafe.theUnsafe: available
+2024-05-13 18:27:02,179 DEBUG PlatformDependent0.java:161 - sun.misc.Unsafe.copyMemory: available
+2024-05-13 18:27:02,180 DEBUG PlatformDependent0.java:193 - sun.misc.Unsafe.storeFence: available
+2024-05-13 18:27:02,181 DEBUG PlatformDependent0.java:236 - java.nio.Buffer.address: available
+2024-05-13 18:27:02,183 DEBUG PlatformDependent0.java:321 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2024-05-13 18:27:02,185 DEBUG PlatformDependent0.java:386 - java.nio.Bits.unaligned: available, true
+2024-05-13 18:27:02,186 DEBUG PlatformDependent0.java:453 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @65466a6a
+2024-05-13 18:27:02,189 DEBUG PlatformDependent0.java:483 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2024-05-13 18:27:02,190 DEBUG PlatformDependent.java:1159 - sun.misc.Unsafe: available
+2024-05-13 18:27:02,190 DEBUG PlatformDependent.java:1270 - maxDirectMemory: 2113929216 bytes (maybe)
+2024-05-13 18:27:02,191 DEBUG PlatformDependent.java:1289 - -Dio.netty.tmpdir: C:\Users\Nandhini\AppData\Local\Temp (java.io.tmpdir)
+2024-05-13 18:27:02,191 DEBUG PlatformDependent.java:1368 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-05-13 18:27:02,192 DEBUG PlatformDependent.java:1119 - Platform: Windows
+2024-05-13 18:27:02,193 DEBUG PlatformDependent.java:178 - -Dio.netty.maxDirectMemory: -1 bytes
+2024-05-13 18:27:02,193 DEBUG PlatformDependent.java:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-05-13 18:27:02,195 DEBUG CleanerJava9.java:71 - java.nio.ByteBuffer.cleaner(): available
+2024-05-13 18:27:02,196 DEBUG PlatformDependent.java:205 - -Dio.netty.noPreferDirect: false
+2024-05-13 18:27:02,210 DEBUG PlatformDependent.java:1010 - org.jctools-core.MpscChunkedArrayQueue: available
+2024-05-13 18:27:02,236 DEBUG InternalThreadLocalMap.java:100 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-05-13 18:27:02,236 DEBUG InternalThreadLocalMap.java:101 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-05-13 18:27:02,460 DEBUG JdkSslContext.java:83 - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2024-05-13 18:27:02,461 DEBUG JdkSslContext.java:84 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2024-05-13 18:27:02,476 DEBUG GlobalEventExecutor.java:53 - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2024-05-13 18:27:02,492 DEBUG MultithreadEventLoopGroup.java:44 - -Dio.netty.eventLoopThreads: 8
+2024-05-13 18:27:02,504 DEBUG NioEventLoop.java:110 - -Dio.netty.noKeySetOptimization: false
+2024-05-13 18:27:02,504 DEBUG NioEventLoop.java:111 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-05-13 18:27:02,558 DEBUG PooledByteBufAllocator.java:157 - -Dio.netty.allocator.numHeapArenas: 8
+2024-05-13 18:27:02,558 DEBUG PooledByteBufAllocator.java:158 - -Dio.netty.allocator.numDirectArenas: 8
+2024-05-13 18:27:02,558 DEBUG PooledByteBufAllocator.java:160 - -Dio.netty.allocator.pageSize: 8192
+2024-05-13 18:27:02,559 DEBUG PooledByteBufAllocator.java:165 - -Dio.netty.allocator.maxOrder: 9
+2024-05-13 18:27:02,559 DEBUG PooledByteBufAllocator.java:169 - -Dio.netty.allocator.chunkSize: 4194304
+2024-05-13 18:27:02,559 DEBUG PooledByteBufAllocator.java:170 - -Dio.netty.allocator.smallCacheSize: 256
+2024-05-13 18:27:02,560 DEBUG PooledByteBufAllocator.java:171 - -Dio.netty.allocator.normalCacheSize: 64
+2024-05-13 18:27:02,560 DEBUG PooledByteBufAllocator.java:172 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-05-13 18:27:02,561 DEBUG PooledByteBufAllocator.java:173 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-05-13 18:27:02,561 DEBUG PooledByteBufAllocator.java:174 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-05-13 18:27:02,561 DEBUG PooledByteBufAllocator.java:175 - -Dio.netty.allocator.useCacheForAllThreads: false
+2024-05-13 18:27:02,562 DEBUG PooledByteBufAllocator.java:176 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-05-13 18:27:02,574 DEBUG ByteBufUtil.java:89 - -Dio.netty.allocator.type: pooled
+2024-05-13 18:27:02,574 DEBUG ByteBufUtil.java:98 - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-05-13 18:27:02,575 DEBUG ByteBufUtil.java:101 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-05-13 18:27:02,851 DEBUG DefaultChannelId.java:79 - -Dio.netty.processId: 9600 (auto-detected)
+2024-05-13 18:27:02,853 DEBUG NetUtil.java:148 - -Djava.net.preferIPv4Stack: false
+2024-05-13 18:27:02,853 DEBUG NetUtil.java:149 - -Djava.net.preferIPv6Addresses: false
+2024-05-13 18:27:02,867 DEBUG NetUtilInitializations.java:145 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2024-05-13 18:27:02,868 DEBUG NetUtil.java:206 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2024-05-13 18:27:02,884 DEBUG DefaultChannelId.java:101 - -Dio.netty.machineId: f8:34:41:ff:fe:22:8a:ee (auto-detected)
+2024-05-13 18:27:02,937 DEBUG AbstractByteBuf.java:63 - -Dio.netty.buffer.checkAccessible: true
+2024-05-13 18:27:02,938 DEBUG AbstractByteBuf.java:64 - -Dio.netty.buffer.checkBounds: true
+2024-05-13 18:27:02,938 DEBUG ResourceLeakDetectorFactory.java:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2f666ec3
+2024-05-13 18:27:02,967 DEBUG Recycler.java:96 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-05-13 18:27:02,968 DEBUG Recycler.java:97 - -Dio.netty.recycler.ratio: 8
+2024-05-13 18:27:02,968 DEBUG Recycler.java:98 - -Dio.netty.recycler.chunkSize: 32
+2024-05-13 18:27:02,968 DEBUG Recycler.java:99 - -Dio.netty.recycler.blocking: false
+2024-05-13 18:27:02,968 DEBUG Recycler.java:100 - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2024-05-13 18:27:05,844 DEBUG Brotli.java:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+2024-05-13 18:27:05,952 INFO  BaseTest.java:74 - firefox browser launched
+2024-05-13 18:27:06,260 INFO  BaseTest.java:99 - maximize the window
+2024-05-13 18:27:07,053 INFO  BaseTest.java:92 - https://login.salesforce.com/is entered
+************* Test case SFDC (Check Remember - 3 ) automation Script started **********************
+induja@tekarch.comdata
+[[FirefoxDriver: firefox on windows (372102b5-0217-452b-9ef7-4aa265f559ff)] -> id: username]userName
+Username textbox is cleared
+Pass:Username textbox is entered to the username filed
+password field is cleared
+Pass:password field is entered to the username filed
+login buttonbutton is clicked
+filename=2024_05_13_18_27_14
+2024-05-13 18:27:14,767 ERROR BaseTest.java:371 - captured the screen
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.io.FileNotFoundException: C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\screenshots\2024_05_13_18_27_14.png (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:197)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
+	at com.google.common.io.Files.copy(Files.java:328)
+	at com.test.automation.tests.base.BaseTest.takescreenshot(BaseTest.java:365)
+	at com.test.automation.tests.utility.TestEventListenersUtility.onTestFailure(TestEventListenersUtility.java:32)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:108)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:262)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+  <testcase name="Forgot_Password4A" classname="com.test.automation.tests.script.SalesForceLoginAutomationScript" time="2.034">
+    <failure message="testCase failed expected [We&apos;ve sent you an email with a link to finish resetting your password.] but found [We’ve sent you an email with a link to finish resetting your password.]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: testCase failed expected [We've sent you an email with a link to finish resetting your password.] but found [We’ve sent you an email with a link to finish resetting your password.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.test.automation.tests.script.SalesForceLoginAutomationScript.Forgot_Password4A(SalesForceLoginAutomationScript.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2024-05-13 18:27:14,788 DEBUG ThreadLocalRandom.java:214 - -Dio.netty.initialSeedUniquifier: 0x9bf330d299a813c9
+2024-05-13 18:27:15,823 INFO  BaseTest.java:114 - browser closed
+2024-05-13 18:27:15,823 INFO  BaseTest.java:67 - *****************automation script closed ******************
+2024-05-13 18:27:18,981 INFO  BaseTest.java:74 - firefox browser launched
+2024-05-13 18:27:19,243 INFO  BaseTest.java:99 - maximize the window
+2024-05-13 18:27:19,938 INFO  BaseTest.java:92 - https://login.salesforce.com/is entered
+************* Test case SFDC (Forgot Password - 4 A ) automation Script started **********************
+2024-05-13 18:27:19,941 INFO  BaseTest.java:239 - waiting until page loads within 30 sec maximum
+forgot passwordbutton is clicked
+userName is cleared
+Pass:userName is entered to the username filed
+continue buttonbutton is clicked
+filename=2024_05_13_18_27_21
+2024-05-13 18:27:21,969 ERROR BaseTest.java:371 - captured the screen
+]]></system-out>
+    <system-err><![CDATA[java.io.FileNotFoundException: C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\screenshots\2024_05_13_18_27_21.png (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:197)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
+	at com.google.common.io.Files.copy(Files.java:328)
+	at com.test.automation.tests.base.BaseTest.takescreenshot(BaseTest.java:365)
+	at com.test.automation.tests.utility.TestEventListenersUtility.onTestFailure(TestEventListenersUtility.java:32)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:108)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:262)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+  <testcase name="Forgot_Password4B" classname="com.test.automation.tests.script.SalesForceLoginAutomationScript" time="2.315">
+    <system-out><![CDATA[2024-05-13 18:27:22,928 INFO  BaseTest.java:114 - browser closed
+2024-05-13 18:27:22,928 INFO  BaseTest.java:67 - *****************automation script closed ******************
+2024-05-13 18:27:26,620 INFO  BaseTest.java:74 - firefox browser launched
+2024-05-13 18:27:26,893 INFO  BaseTest.java:99 - maximize the window
+2024-05-13 18:27:27,599 INFO  BaseTest.java:92 - https://login.salesforce.com/is entered
+************* Test case SFDC (Invalid Username Password - 4 B ) automation Script started **********************
+admin1@gmail.comdata
+[[FirefoxDriver: firefox on windows (da81b08f-8eb0-406f-a7bf-885784f584a6)] -> id: username]userName
+Username textbox is cleared
+Pass:Username textbox is entered to the username filed
+password field is cleared
+Pass:password field is entered to the username filed
+login buttonbutton is clicked
+]]></system-out>
+  </testcase>
+  <testcase name="login_Error_Message1" classname="com.test.automation.tests.script.SalesForceLoginAutomationScript" time="2.671">
+    <system-out><![CDATA[2024-05-13 18:27:31,205 INFO  BaseTest.java:114 - browser closed
+2024-05-13 18:27:31,205 INFO  BaseTest.java:67 - *****************automation script closed ******************
+2024-05-13 18:27:34,529 INFO  BaseTest.java:74 - firefox browser launched
+2024-05-13 18:27:34,798 INFO  BaseTest.java:99 - maximize the window
+2024-05-13 18:27:35,556 INFO  BaseTest.java:92 - https://login.salesforce.com/is entered
+************* Test case SFDC (Login Error Message - 1 ) automation Script started **********************
+induja@tekarch.comdata
+[[FirefoxDriver: firefox on windows (abf2e7a2-a7ce-4543-9bb7-2eaed966a0db)] -> id: username]userName
+Username textbox is cleared
+Pass:Username textbox is entered to the username filed
+password field is cleared
+login buttonbutton is clicked
+]]></system-out>
+  </testcase>
+  <testcase name="login_To_SalesForce2" classname="com.test.automation.tests.script.SalesForceLoginAutomationScript" time="7.931">
+    <failure message="test Case failed expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: test Case failed expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.test.automation.tests.script.SalesForceLoginAutomationScript.login_To_SalesForce2(SalesForceLoginAutomationScript.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2024-05-13 18:27:39,197 INFO  BaseTest.java:114 - browser closed
+2024-05-13 18:27:39,197 INFO  BaseTest.java:67 - *****************automation script closed ******************
+2024-05-13 18:27:42,291 INFO  BaseTest.java:74 - firefox browser launched
+2024-05-13 18:27:42,561 INFO  BaseTest.java:99 - maximize the window
+2024-05-13 18:27:43,239 INFO  BaseTest.java:92 - https://login.salesforce.com/is entered
+************* Test case SFDC (Login to Salesforce - 2 ) automation Script started **********************
+induja@tekarch.comdata
+[[FirefoxDriver: firefox on windows (8c0bc607-4239-462b-826e-6f9ecf6588a9)] -> id: username]userName
+Username textbox is cleared
+Pass:Username textbox is entered to the username filed
+password field is cleared
+Pass:password field is entered to the username filed
+login buttonbutton is clicked
+filename=2024_05_13_18_27_51
+2024-05-13 18:27:51,166 ERROR BaseTest.java:371 - captured the screen
+]]></system-out>
+    <system-err><![CDATA[java.io.FileNotFoundException: C:\Users\Nandhini\Java2023-workspace\SeleniumSalesforceAutomationwithPOM\screenshots\2024_05_13_18_27_51.png (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:197)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
+	at com.google.common.io.Files.copy(Files.java:328)
+	at com.test.automation.tests.base.BaseTest.takescreenshot(BaseTest.java:365)
+	at com.test.automation.tests.utility.TestEventListenersUtility.onTestFailure(TestEventListenersUtility.java:32)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:108)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:262)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+</testsuite>

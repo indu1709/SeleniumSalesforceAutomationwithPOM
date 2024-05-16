@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-13T18:27:00 CDT" name="mySuite" finished-at="2024-05-13T18:27:52 CDT" duration-ms="52002">
+    <groups>
+    </groups>
+    <test started-at="2024-05-13T18:27:00 CDT" name="myTest" finished-at="2024-05-13T18:27:52 CDT" duration-ms="52002">
+      <class name="com.test.automation.tests.script.SalesForceLoginAutomationScript">
+        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:00 CDT" name="setUpBeforeTest" finished-at="2024-05-13T18:27:01 CDT" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTest -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:01 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-13T18:27:07 CDT" duration-ms="6001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="Check_RemeberMe3()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:07 CDT" name="Check_RemeberMe3" finished-at="2024-05-13T18:27:14 CDT" duration-ms="7609" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ login Unsucessful expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  login Unsucessful expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.test.automation.tests.script.SalesForceLoginAutomationScript.Check_RemeberMe3(SalesForceLoginAutomationScript.java:101)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check_RemeberMe3 -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:14 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-13T18:27:15 CDT" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:15 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-13T18:27:19 CDT" duration-ms="4115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="Forgot_Password4A()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:19 CDT" name="Forgot_Password4A" finished-at="2024-05-13T18:27:21 CDT" duration-ms="1969" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testCase failed expected [We've sent you an email with a link to finish resetting your password.] but found [We’ve sent you an email with a link to finish resetting your password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testCase failed expected [We've sent you an email with a link to finish resetting your password.] but found [We’ve sent you an email with a link to finish resetting your password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.test.automation.tests.script.SalesForceLoginAutomationScript.Forgot_Password4A(SalesForceLoginAutomationScript.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Forgot_Password4A -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:21 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-13T18:27:22 CDT" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:22 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-13T18:27:27 CDT" duration-ms="4670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="Forgot_Password4B()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:27 CDT" name="Forgot_Password4B" finished-at="2024-05-13T18:27:29 CDT" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Forgot_Password4B -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:29 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-13T18:27:31 CDT" duration-ms="1295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:31 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-13T18:27:35 CDT" duration-ms="4350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="login_Error_Message1()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:35 CDT" name="login_Error_Message1" finished-at="2024-05-13T18:27:38 CDT" duration-ms="2669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Error_Message1 -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:38 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-13T18:27:39 CDT" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:39 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-13T18:27:43 CDT" duration-ms="4041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="login_To_SalesForce2()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:43 CDT" name="login_To_SalesForce2" finished-at="2024-05-13T18:27:51 CDT" duration-ms="7860" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[test Case failed expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: test Case failed expected [Home Page ~ Salesforce - Developer Edition] but found [Change Your Password | Salesforce]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.test.automation.tests.script.SalesForceLoginAutomationScript.login_To_SalesForce2(SalesForceLoginAutomationScript.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_To_SalesForce2 -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@38c6f217]" started-at="2024-05-13T18:27:51 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-13T18:27:52 CDT" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+      </class> <!-- com.test.automation.tests.script.SalesForceLoginAutomationScript -->
+    </test> <!-- myTest -->
+  </suite> <!-- mySuite -->
+</testng-results>
