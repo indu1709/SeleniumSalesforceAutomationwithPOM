@@ -139,7 +139,7 @@ public class BaseTest {
 		driver.close();
 		mylog.info("browser closed");
 		// report.logTestInfo("browser closed");
-		driver.quit();
+	//	driver.quit();
 		driver = null;
 
 	}
