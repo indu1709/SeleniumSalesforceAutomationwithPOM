@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.core.Logger;
 import org.apache.logging.log4j.util.PropertiesUtil;
 import org.openqa.selenium.Alert;
@@ -23,46 +24,70 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.google.common.io.Files;
 import com.test.automation.tests.utility.ExtentReportsUtility;
 import com.test.automation.tests.utility.Log4JUtility;
 import com.test.automation.tests.utility.PropertiesUtility;
+import com.test.automation.tests.utility.Constants;
 
 public class BaseTest {
 	protected static WebDriver driver = null;
 	protected static WebDriverWait wait = null;
-	protected Log4JUtility logObject=Log4JUtility.getInstance();
+	protected Log4JUtility logObject = Log4JUtility.getInstance();
 	protected static Logger mylog;
-	protected static ExtentReportsUtility report=ExtentReportsUtility.getInstance();
-	
+	protected static ExtentReportsUtility report = ExtentReportsUtility.getInstance();
+	protected static String userName;
+	protected static String password;
+	protected static String expected;
+	protected static String expOPPPipelineTitle;
+	protected static String expOppStuckTitle;
+	protected static String AccountName;
+	protected static String ViewName;
+	protected static String UniqueViewName;
+	protected static String Value;
+	protected static String actualContacterrorText;
+	protected static String email;
+
 	@BeforeTest
-	public void setUpBeforeTest()
-	{
-		mylog=logObject.getLogger();
+	public void setUpBeforeTest() {
+		mylog = logObject.getLogger();
 	}
 
 	@BeforeMethod
 	@Parameters("browsername")
 	public static void setUpBeforeTestMethod(@Optional("firefox") String browser_name) {
-		PropertiesUtility propUtility=new PropertiesUtility();
-		Properties prop=propUtility.createPropertyObject();
+		PropertiesUtility propUtility = new PropertiesUtility();
+		Properties prop = propUtility.createPropertyObject();
 		propUtility.loadFile("applicationDataProperties", prop);
 		String url = propUtility.getPropertyValue("url", prop);
+		userName = propUtility.getPropertyValue("login.valid.userid", prop);
+		password = propUtility.getPropertyValue("login.valid.password", prop);
+		expected = propUtility.getPropertyValue("Home.page.title", prop);
+		expOPPPipelineTitle = propUtility.getPropertyValue("opp.pipeline.title", prop);
+		expOppStuckTitle = propUtility.getPropertyValue("Stuck.opp.title", prop);
+		AccountName = propUtility.getPropertyValue("Account.Name", prop);
+		ViewName = propUtility.getPropertyValue("View.Name", prop);
+		UniqueViewName = propUtility.getPropertyValue("UniqueViewName", prop);
+		Value = propUtility.getPropertyValue("Value", prop);
+		actualContacterrorText=propUtility.getPropertyValue("actualContacterrorText", prop);
+		email=propUtility.getPropertyValue("email", prop);
 		launchbrowser(browser_name);
 		maximizeBrowser();
 		gotoUrl(url);
 
 	}
-	
+
 	@AfterMethod
-	public static void tearDownAfterTestMethod()
-	{
+	public static void tearDownAfterTestMethod() {
 		closeBrowser();
 		mylog.info("*****************automation script closed ******************");
 	}
@@ -83,6 +108,7 @@ public class BaseTest {
 		}
 
 	}
+
 	public WebDriver getDriverInstance() {
 		return driver;
 	}
@@ -105,24 +131,25 @@ public class BaseTest {
 
 	public static void refreshPage() {
 		driver.navigate().refresh();
-		//report.logTestInfo("page is refreshed");
+		// report.logTestInfo("page is refreshed");
 	}
 
 	// ***************browser closed and quit ********************************8
 	public static void closeBrowser() {
 		driver.close();
 		mylog.info("browser closed");
-		//report.logTestInfo("browser closed");
-		driver=null;
-		
+		// report.logTestInfo("browser closed");
+		driver.quit();
+		driver = null;
+
 	}
 
 	public static void quitBrowser(WebDriver driver) {
 		driver.quit();
 		mylog.info("All the browsers are closed");
-	//	report.logTestInfo("browser closed");
-		driver=null;
-		
+		// report.logTestInfo("browser closed");
+		driver = null;
+
 	}
 
 	// ********************************************************************
@@ -132,7 +159,7 @@ public class BaseTest {
 			clearElement(givenWebElement, objectName);
 			givenWebElement.sendKeys(data);
 			mylog.info(" data is entered in the " + objectName);
-			//report.logTestInfo("Pass :" +objectName + "is entered to username feild");
+			// report.logTestInfo("Pass :" +objectName + "is entered to username feild");
 		} else {
 			mylog.error(objectName + " element is not displayed");
 		}
@@ -152,7 +179,7 @@ public class BaseTest {
 		if (buttonElement.isEnabled()) {
 			buttonElement.click();
 			mylog.info(objectName + " is clicked");
-			//report.logTestInfo( objectName + " is clicked");
+			// report.logTestInfo( objectName + " is clicked");
 		} else {
 			mylog.error(objectName + " element is not enabled");
 		}
@@ -165,33 +192,28 @@ public class BaseTest {
 		return data;
 	}
 
-	//*****************Unselect CheckBox******************************
-	public static void clickOn(WebElement element)
-	{
+	// *****************Unselect CheckBox******************************
+	public static void clickOn(WebElement element) {
 		Actions act = new Actions(driver);
-		if(element.isEnabled())
-		{
+		if (element.isEnabled()) {
 			act.click(element).build().perform();
 		}
 
 	}
 
-	public static void unselectCheckBox( WebElement element) 
-	{
-		if(element.isSelected())	
-		{
+	public static void unselectCheckBox(WebElement element) {
+		if (element.isSelected()) {
 			clickOn(element);
 		}
 	}
 
-	public static void selectCheckBox(WebElement element) 
-	{
-		if(!(element.isSelected()))	
+	public static void selectCheckBox(WebElement element) {
+		if (!(element.isSelected()))
 			clickOn(element);
 
 	}
-	public static boolean isCheckBoxSelected( WebElement element)
-	{
+
+	public static boolean isCheckBoxSelected(WebElement element) {
 		return element.isSelected();
 	}
 
@@ -201,13 +223,13 @@ public class BaseTest {
 	public static Alert switchToAlert() {
 
 		Alert alert = driver.switchTo().alert();
-		System.out.println(" switched to alert");
+		mylog.info(" switched to alert");
 		return alert;
 
 	}
 
 	public static void AcceptAlert(Alert alert) {
-		System.out.println(" Alert accepted");
+		mylog.info(" Alert accepted");
 		alert.accept();
 	}
 
@@ -233,11 +255,12 @@ public class BaseTest {
 
 	}
 
-	// *************************Action class reusable methods*************************
+	// *************************Action class reusable
+	// methods*************************
 
 	public static void waitUntilPageLoads() {
-		System.out.println("waiting until page loads within 30 sec maximum");
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		mylog.info("waiting until page loads within 30 sec maximum");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 	}
 
 	public static void moveToElementAction(WebElement element, String objName) {
@@ -251,15 +274,8 @@ public class BaseTest {
 		action.contextClick(elemenet).build().perform();
 		System.out.println("right click performed on Web Element  " + objName);
 	}
-	// ************************Select class reusable methods**************************************
-
-	public static void selectTextByData(WebElement element, String text, String objName) {
-		waitforVisibilty(element, 5, objName);
-		Select selectCity = new Select(element);
-		selectCity.selectByVisibleText(text);
-		System.out.println(objName + "  selected  " + text);
-
-	}
+	// ************************Select class reusable
+	// methods**************************************
 
 	public static void selectByIndexData(WebElement element, int index, String objName) {
 		waitforVisibilty(element, 5, objName);
@@ -268,12 +284,6 @@ public class BaseTest {
 		System.out.println(objName + "  selected with index  " + index);
 	}
 
-	public static void selectValueByData(WebElement element, String text, String objName) {
-		waitforVisibilty(element, 5, objName);
-		Select selectCity = new Select(element);
-		selectCity.selectByValue(text);
-		System.out.println(objName + "  selected ");
-	}
 	// ****************************************************************************************************************
 
 	public static void waitforVisibilty(WebElement webElement, WebDriver driver, int time, String objectName) {
@@ -290,7 +300,7 @@ public class BaseTest {
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 
-		System.out.println(objectName + "is waiting for visibility  for fluent wait");
+		mylog.info(objectName + "is waiting for visibility  for fluent wait");
 	}
 
 	public static void waitUntilPresenceofElementLocatedBy(By locator, String objName) {
@@ -341,6 +351,16 @@ public class BaseTest {
 
 		return element;
 	}
+
+	public static void switchtoWindowHandle(String windowHandle, WebDriver driver) {
+		// String windowHandle = driver.getWindowHandle();
+		System.out.println(windowHandle);
+		for (String winHandle : driver.getWindowHandles()) {
+			driver.switchTo().window(winHandle);
+		}
+
+	}
+
 //*******************************************************************************************************************************	
 
 	public static void takescreenshot(WebDriver driver, String filePath) throws IOException {
@@ -356,21 +376,57 @@ public class BaseTest {
 		File destination = new File(filePath);
 		Files.copy(src, destination);
 	}
-	
-	public void takescreenshot(String filepath) {
-		 TakesScreenshot screenCapture=(TakesScreenshot)driver;
-		 File src=screenCapture.getScreenshotAs(OutputType.FILE);
-		 File destination=new File(filepath);
-		 try {
+
+	public void takescreenshot(WebDriver driver) {
+		ExtentReportsUtility extentUtility = ExtentReportsUtility.getInstance();
+
+		try {
+			TakesScreenshot screenCapture = (TakesScreenshot) driver;
+			File src = screenCapture.getScreenshotAs(OutputType.FILE);
+			Date currentDate = new Date();
+			String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(currentDate);
+
+			// Initialize ExtentReportsUtility and start the report
+			if (extentUtility == null) {
+				throw new NullPointerException("ExtentReportsUtility instance is null");
+			}
+			extentUtility.startExtentReport();
+
+			// Construct file paths for the screenshot
+			String reportFilePath = Constants.CUR_DIR + Constants.FILE_SEPARATOR + Constants.SCREENSHOT_PATH;
+			String fileName = "Saleforce" + timeStamp + ".png";
+			String filepath = reportFilePath + Constants.FILE_SEPARATOR + fileName;
+			
+	        // Create the screenshot folder if it doesn't exist
+	        File folder = new File(reportFilePath);
+	        if (!folder.exists()) {
+	            folder.mkdirs(); // Recursively create directories
+	        }
+
+
+			File destination = new File(filepath);
 			Files.copy(src, destination);
-			mylog.info("captured the screen");
-			report.logTestInfo("captured the screen");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			mylog.info("Captured the screen");
+			extentUtility.logTestInfo("Captured the screen"); // Log success to the extent report
+			extentUtility.logTestWithscreenshot(filepath); // Log the screenshot to the extent report
+
+		} catch (Exception e) {
 			e.printStackTrace();
-			mylog.error("captured the screen");
-			report.logTestFailedWithException(e);
+			mylog.error("Failed to capture the screen");
+			// Log failure with exception to the extent report if possible
+			if (extentUtility != null) {
+				extentUtility.logTestFailedWithException(e);
+			} else {
+				System.err.println("ExtentReportsUtility instance is null. Cannot log exception to extent report.");
+			}
+
+		} finally {
+			// End the extent report
+			if (extentUtility != null) {
+				extentUtility.endReport();
+			} else {
+				System.err.println("ExtentReportsUtility instance is null. Cannot end extent report.");
+			}
 		}
 	}
-
 }

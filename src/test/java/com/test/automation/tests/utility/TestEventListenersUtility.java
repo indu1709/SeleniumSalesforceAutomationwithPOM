@@ -15,7 +15,8 @@ public class TestEventListenersUtility extends BaseTest implements ITestListener
 
 	@Override
 	public void onTestStart(ITestResult result) { // before every @Test method called this method is executed
-		extentUtilityObject.startSingleTestReport(result.getMethod().getMethodName());	
+        extentUtilityObject.startSingleTestReport(result.getMethod().getMethodName());
+	
 	}
 
 	@Override
@@ -26,11 +27,14 @@ public class TestEventListenersUtility extends BaseTest implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult result) {
 		extentUtilityObject.logTestFailed(result.getMethod().getMethodName()+" is failed");
-		String filename=new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date());
-		System.out.println("filename="+filename);
-		String path=Constants.SCREENSHOTS_DRECTORY_PATH+filename+".png";
-		takescreenshot(path);
-		extentUtilityObject.logTestWithscreenshot("./screenshots/"+filename+".png");
+		Date currentDate = new Date();
+		String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(currentDate);
+		
+		String reportFilePath = Constants.CUR_DIR+Constants.FILE_SEPARATOR+Constants.SCREENSHOT_PATH;
+		String fileName = "Saleforce"+timeStamp+".png";
+	    String filepath = reportFilePath+Constants.FILE_SEPARATOR+fileName;
+		takescreenshot(driver);
+		extentUtilityObject.logTestWithscreenshot("./screenshots/"+fileName+".png");
 	}
 
 	@Override

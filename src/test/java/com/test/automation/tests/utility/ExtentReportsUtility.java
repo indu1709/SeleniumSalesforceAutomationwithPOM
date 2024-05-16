@@ -17,7 +17,6 @@ public class ExtentReportsUtility {
 	private static ExtentReportsUtility extentObject;
 	
 	private ExtentReportsUtility() {
-		
 	}
 	
 	public static ExtentReportsUtility getInstance() {
@@ -49,8 +48,11 @@ public class ExtentReportsUtility {
 	}
 	
 	public void logTestInfo(String text) {
-		testLogger.log(Status.INFO,text);
-		//testLogger.info(text);
+	    if (testLogger != null) {
+	        testLogger.log(Status.INFO, text);
+	    } else {
+	        System.err.println("Extent test logger is null. Please start a test report before logging information.");
+	    }
 	}
 	
 	public void logTestpassed(String text) {
@@ -62,8 +64,11 @@ public class ExtentReportsUtility {
 	}
 	
 	public void logTestFailedWithException(Throwable e) {
-		testLogger.log(Status.FAIL,e);
-	
+	    if (testLogger != null) {
+	        testLogger.log(Status.FAIL, e);
+	    } else {
+	        System.err.println("Extent test logger is null. Failed to log exception.");
+	    }	
 		}
 	
 	public void logTestWithscreenshot(String path) {

@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.test.automation.tests.utility.ExtentReportsUtility;
 import com.test.automation.tests.utility.Log4JUtility;
@@ -33,6 +34,8 @@ public class BasePage
 	public BasePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+        report = ExtentReportsUtility.getInstance(); // Instantiate report object
+
 	}
 	
 	public static String getPageTitle() {
@@ -142,6 +145,60 @@ public class BasePage
 
 	}
 
+	public  void validateDropDownwithSelectClass(WebElement element, Object[] expected, String objectName) {
+		Select select = new Select(element);
+		List<WebElement> options = select.getOptions();
+		for (int i = 0; i < options.size(); i++) {
+			Assert.assertEquals(options.get(i).getText(), expected[i]);
+		}
+
+	}
+	
+	public static void selectValueByData(WebElement element, String text, String objName) {
+		waitforVisibilty(element, 5, objName);
+		Select selectCity = new Select(element);
+		selectCity.selectByValue(text);
+		System.out.println(objName + "  selected ");
+	}
+
+	public  void waitForElement(Duration time, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver,time);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}   
+	 public static void Radiobutton(WebElement obj, String objName) {
+			
+			if(obj.isDisplayed() ){
+				obj.click();
+				System.out.println("Pass: "+objName+" is clicked");
+			}else {
+				System.out.println("Fail:"+objName+" is not displayed .Please check your application");			
+			}
+		}
+	  public static void switchtoAlert(WebDriver driver) {
+			 driver.switchTo().alert().accept();
+			 System.out.println("Pass: alert is present and accept");
+		}
+	  public static void selectTextByData(WebElement element, String text, String objName) {
+			waitforVisibilty(element, 5, objName);
+			Select selectCity = new Select(element);
+			selectCity.selectByVisibleText(text);
+			System.out.println(objName + "  selected  " + text);
+
+		}
+	  public static void selectByVisibleText(WebElement element, String data, String objName) {
+			waitforVisibilty(element, 5, objName);
+			Select selectElement = new Select(element);
+			List<WebElement> op = selectElement.getOptions();
+			int size = op.size();
+			for (int i = 0; i < size; i++) {
+				String options = op.get(i).getText();
+				System.out.println(options);
+				if (options.equals(data)) {
+					selectElement.selectByVisibleText(data);
+
+				}
+			}
+		}
 
 
 }

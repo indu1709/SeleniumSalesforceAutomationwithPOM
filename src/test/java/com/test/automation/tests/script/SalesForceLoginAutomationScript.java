@@ -3,6 +3,7 @@ package com.test.automation.tests.script;
 import java.util.Properties;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.automation.pages.Home.HomePage;
@@ -14,8 +15,10 @@ import com.test.automation.salesForceLoginPages.ReturnToLoginPage;
 import com.test.automation.tests.base.BaseTest;
 import com.test.automation.tests.utility.PropertiesUtility;
 
+
 public class SalesForceLoginAutomationScript extends BaseTest {
 
+	
 	@Test
 	public static void login_To_SalesForce2() throws InterruptedException {
 
@@ -29,7 +32,7 @@ public class SalesForceLoginAutomationScript extends BaseTest {
 		String password = propUtility.getPropertyValue("login.valid.password", prop);
 		String expected = propUtility.getPropertyValue("Home.page.title", prop);
 
-		waitUntilPageLoads();
+		Thread.sleep(3000);
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterUserName(userName);
 		loginPage.enterPassword(password);

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-10T13:31:09 CST" name="Default suite" finished-at="2023-11-10T13:31:20 CST" duration-ms="10672">
+  <suite started-at="2024-05-16T00:54:32 CDT" name="Default suite" finished-at="2024-05-16T00:54:53 CDT" duration-ms="21702">
     <groups>
     </groups>
-    <test started-at="2023-11-10T13:31:09 CST" name="Default test" finished-at="2023-11-10T13:31:20 CST" duration-ms="10672">
-      <class name="com.test.automation.tests.script.SalesForceLoginAutomationScript">
-        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@233795b6]" started-at="2023-11-10T13:31:09 CST" name="setUpBeforeTest" finished-at="2023-11-10T13:31:10 CST" duration-ms="611" status="PASS">
+    <test started-at="2024-05-16T00:54:32 CDT" name="Default test" finished-at="2024-05-16T00:54:53 CDT" duration-ms="21702">
+      <class name="com.test.automation.tests.script.SalesforceLeadAutomation">
+        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.test.automation.tests.script.SalesforceLeadAutomation@477b4cdf]" started-at="2024-05-16T00:54:32 CDT" name="setUpBeforeTest" finished-at="2024-05-16T00:54:32 CDT" duration-ms="524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeTest -->
-        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@233795b6]" started-at="2023-11-10T13:31:10 CST" name="setUpBeforeTestMethod" finished-at="2023-11-10T13:31:16 CST" duration-ms="5907" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeTestMethod(java.lang.String)[pri:0, instance:com.test.automation.tests.script.SalesforceLeadAutomation@477b4cdf]" started-at="2024-05-16T00:54:32 CDT" name="setUpBeforeTestMethod" finished-at="2024-05-16T00:54:39 CDT" duration-ms="6211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeTestMethod -->
-        <test-method signature="Forgot_Password4B()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@233795b6]" started-at="2023-11-10T13:31:16 CST" name="Forgot_Password4B" finished-at="2023-11-10T13:31:18 CST" duration-ms="2505" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.automation.tests.script.SalesforceLeadAutomation@477b4cdf]" started-at="2024-05-16T00:54:39 CDT" name="beforeMethod" finished-at="2024-05-16T00:54:48 CDT" duration-ms="9186" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Forgot_Password4B -->
-        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesForceLoginAutomationScript@233795b6]" started-at="2023-11-10T13:31:18 CST" name="tearDownAfterTestMethod" finished-at="2023-11-10T13:31:20 CST" duration-ms="1594" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="newLeads()[pri:0, instance:com.test.automation.tests.script.SalesforceLeadAutomation@477b4cdf]" started-at="2024-05-16T00:54:48 CDT" name="newLeads" finished-at="2024-05-16T00:54:52 CDT" duration-ms="4040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newLeads -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.test.automation.tests.script.SalesforceLeadAutomation@477b4cdf]" started-at="2024-05-16T00:54:52 CDT" name="tearDownAfterTestMethod" finished-at="2024-05-16T00:54:53 CDT" duration-ms="1678" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0dfbef7e-a599-405f-967b-cf415e971e86, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:26392, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38476, moz:profile: C:\Users\Nandhini\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:26392/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0dfbef7e-a599-405f-967b-cf415e971e86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0dfbef7e-a599-405f-967b-cf415e971e86, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:26392, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 38476, moz:profile: C:\Users\Nandhini\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:26392/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0dfbef7e-a599-405f-967b-cf415e971e86
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:128)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterTestMethod -->
-      </class> <!-- com.test.automation.tests.script.SalesForceLoginAutomationScript -->
+      </class> <!-- com.test.automation.tests.script.SalesforceLeadAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
